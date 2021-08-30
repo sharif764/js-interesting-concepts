@@ -1,0 +1,11 @@
+const bottle = { color: 'yellow', hole: 'water', price: 50, isCleanned: true };
+const keys = Object.keys(bottle);
+// console.log(keys);
+const values = Object.values(bottle);
+// console.log(values[3]);
+// console.log(values);
+Object.freeze(bottle);
+// const pairs = Object.entries(bottle);
+delete bottle.isCleanned;
+console.log(bottle);
+Object.seal(bottle);
